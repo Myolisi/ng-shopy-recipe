@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-12 pb-4">
+    <button type="button" class="btn btn-success" (click)="onNewRecipe()">
+      <fa-icon [icon]="['fas', 'plus-circle']"></fa-icon> New Recipe
+    </button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="list-group rounded-0"></div>
+    <app-recipe-item
+      [routerLink]="['/recipes', i]"
+      *ngFor="let recipe of recipes; let i = index"
+      [recipe]="recipe"
+    ></app-recipe-item>
+  </div>
+</div>

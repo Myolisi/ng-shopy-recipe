@@ -1,0 +1,16 @@
+<a
+  class="list-group-item list-group-item-action d-flex justify-content-between"
+  routerLinkActive="active"
+>
+  <div class="mr-2">
+    <h6>{{ recipe.name }}</h6>
+    <small>{{ recipe.description }}</small>
+  </div>
+  <img
+    [src]="recipe.imagePath"
+    class="img-fluid rounded-0"
+    alt=""
+    style="max-height: 70px"
+  />
+</a>
+<br />

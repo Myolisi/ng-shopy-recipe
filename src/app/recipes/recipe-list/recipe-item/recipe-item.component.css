@@ -1,0 +1,9 @@
+.list-group-item.active {
+  color: rgb(255, 255, 255);
+  background-color: #4e9eff;
+  border-color: #deebfa;
+}
+
+.list-group-item-action:focus{
+  border: none;
+}
